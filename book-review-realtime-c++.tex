@@ -1,0 +1,189 @@
+% Released under CC-BY-SA 2012
+% Author: Stefan Petersen <spe@ciellt.se> 
+%
+% This presentation is based on the conference-ornate-20min template
+% by Till Tantau <tantau@users.sourceforge.net>.  You may redistribute
+% and/or modify it under the terms of the GNU Public License, version
+% 2.
+%
+% To produce a PDF from this document, do something like
+%
+%   pdflatex FILE.tex
+%
+% You might want to have packages like tetex, latex-beamer and
+% ghostscript installed.
+
+% Presentation (C) 2013, Stefan Petersen (spe(a)ciellt.se)
+% Denna presentation är licenserad under Creative Commons BY-NC-SA 3.0
+% Attribution-NonCommercial-ShareAlike
+% http://creativecommons.org/licenses/by-nc-sa/3.0/
+
+\documentclass{beamer}
+\mode<presentation>
+{
+  \usetheme{Warsaw}
+  \setbeamercovered{transparent}
+}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{url}
+\usepackage{cclicenses}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Book recommendations }
+\subtitle{Real-Time C++, Second Edition \\ \emph{Christopher Kormanyos}}
+\author{Stefan Petersen}
+\date[2018-10-25]{C++ Meetup 0x10, Stockholm, 2018 \\
+  Released under Creative Commons BY-NC-SA 3.0 \\
+  \cc \byncsa}
+%\pgfdeclareimage[height=0.5cm]{ndn-logo}{images/DFRI-logo}
+%\logo{\pgfuseimage{ndn-logo}}
+%
+%\AtBeginSection[]
+%{
+%  \begin{frame}<beamer>{Innehåll}
+%    \tableofcontents[currentsection,currentsubsection]
+%  \end{frame}
+%}
+
+% Enable this to make items appear one at a time.
+%\beamerdefaultoverlayspecification{<+->}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{frame}
+  \titlepage
+\end{frame}
+\begin{frame}{Table of Contents}
+  \tableofcontents
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Who am I and why do I care}
+\begin{frame}{Who am I }
+  \begin{itemize}
+  \item Electronics designer and embedded programmer
+  \item My own business since 2008, AB since 2012 (Ciellt AB)
+  \item Programming microcontrollers since 1995
+  \item Started open source project gerbv (gEDA)
+  \item The quest for a ``safer C'' led me to C++ 1-2 years ago.
+  \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Embedded microcontroller}
+
+\begin{frame}{Embedded microcontrollers}
+  \begin{itemize}
+  \item  Limits in CPU speed
+    \pause ==> most common 8-32 MHz
+    \pause \item Limits in RAM
+    \pause ==> 4 kb-384 kb (usually 10-16 kb)
+    \pause \item Limits in flash (program memory)
+    \pause ==> 16 kb-512 kb (usually 16-64 kb)
+    \pause \item Simple, direct connection to hardware (lights, buttons etc)
+    \pause ==> programming ``close to the metal''
+    \pause \item Limited IO
+    \pause ==> serial port if you're lucky, displays is special
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{What does this give?}
+  \begin{itemize}
+  \item Optimize program use
+    \pause \item Use interrupts and DMA's
+    \pause \item Precalculate as much possible, maybe tables?
+    \pause \item Do not use dynamic memory
+    \pause \item Avoid dynamic bindings
+  \end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The Book}
+
+\begin{frame}{Split into three sections}
+  \begin{enumerate}[I]
+  \item Language Technologies for Real-Time C++
+  \item Components for Real-Time C++
+  \item Mathematics and Utilities for Real-Time C++
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Language Technologies for Real-Time C++}
+  \begin{itemize}
+  \item Getting Started with Real-Time C++
+  \item Working with a Real-Time C++ Program on a Board
+  \item An Easy Jump-Start in Real-Time C++
+  \item Object-Oriented Techniques for Microcontrollers
+  \item C++ Templates for Microcontrollers
+  \item Optimized C++ Programming for Microcontrollers
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Components for Real-Time C++}
+  \begin{itemize}
+  \item Accessing Microcontroller Registers
+  \item The Right Start
+  \item Low-Level Hardware Drivers in C++
+  \item Custom Memory Management
+  \item C++ Multitasking
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Mathematics and Utilities for Real-Time C++}
+  \begin{itemize}
+  \item Floating-Point Mathemathics
+  \item Fixed-Point Mathemathics
+  \item High-Performance Digital Filters
+  \item C++ Utilities
+  \item Extending the C++ Standard Library and the STL
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Appendices}
+  \begin{enumerate}[A]
+  \item A Tutorial for Real-Time C++
+  \item A Robust Real-Time C++ Environment
+  \item Building and Installing GNU GCC Cross Compilers
+  \item Building a Microcontroller Circuit
+  \end{enumerate}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Finale}
+
+\begin{frame}{Conclusions}
+\begin{itemize}
+\item Good book if you want to use C++ on a microcontroller.
+  \pause\item You have to have experience in microcontrollers
+  \pause \item You have to have experience in programming these things.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Other Sources}
+  \begin{itemize}
+  \item ``Getting Started with C++ in Embedded Systems'',
+    Micharl Barr \& Michael Wilk (Barr Group), https://vimeo.com/170004397
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Questions}
+\begin{center}
+  \Large Thank you! \normalsize\\
+  \vspace{5mm}
+  Real-Time C++, Second edition, \emph{Christopher Kormanyos} \\
+  \tiny Efficient Object-Oriented and Template Microcontroller Programming \\
+  \vspace{5mm}
+  \normalsize Questions? \\
+  \vspace{3mm}
+  Contact: spe (at) ciellt (dot )se
+
+\end{center}
+\end{frame}
+
+
+%%%%
+\end{document}
