@@ -14,7 +14,7 @@
 % ghostscript installed.
 
 % Presentation (C) 2013, Stefan Petersen (spe(a)ciellt.se)
-% Denna presentation är licenserad under Creative Commons BY-NC-SA 3.0
+% This presentation is licensed under Creative Commons BY-NC-SA 3.0
 % Attribution-NonCommercial-ShareAlike
 % http://creativecommons.org/licenses/by-nc-sa/3.0/
 
@@ -54,14 +54,15 @@
 \begin{frame}
   \titlepage
 \end{frame}
-\begin{frame}{Table of Contents}
-  \tableofcontents
-\end{frame}
+%\begin{frame}{Table of Contents}
+%  \tableofcontents
+%\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Who am I and why do I care}
-\begin{frame}{Who am I }
+\section{Who am I and why do I care?}
+\begin{frame}{Who am I and why do I care?}
   \begin{itemize}
   \item Electronics designer and embedded programmer
+  \item Graduated KTH Elektro 1998
   \item My own business since 2008, AB since 2012 (Ciellt AB)
   \item Programming microcontrollers since 1995
   \item Started open source project gerbv (gEDA)
@@ -90,7 +91,11 @@
 
 \begin{frame}{What does this give?}
   \begin{itemize}
-  \item Optimize program use
+  \pause \item Optimize program use
+    \begin{itemize}
+    \item No exceptions
+    \item No RTTI
+    \end{itemize}
     \pause \item Use interrupts and DMA's
     \pause \item Precalculate as much possible, maybe tables?
     \pause \item Do not use dynamic memory
@@ -157,16 +162,20 @@
 \begin{frame}{Conclusions}
 \begin{itemize}
 \item Good book if you want to use C++ on a microcontroller.
-  \pause\item You have to have experience in microcontrollers
+  \pause \item Have lots of example code to see.
+  \pause \item Is not a CS book.
+  \pause\item You have to have some experience in microcontrollers.
   \pause \item You have to have experience in programming these things.
+  \pause \item Refers to other books, which is a mixed blessing.
 \end{itemize}
 \end{frame}
-
 
 \begin{frame}{Other Sources}
   \begin{itemize}
   \item ``Getting Started with C++ in Embedded Systems'',
     Micharl Barr \& Michael Wilk (Barr Group), https://vimeo.com/170004397
+  \item ``scmRTOS: Single-Chip Microcontroller Real-Time Operating System'',
+    https://github.com/scmrtos (https://sourceforge.net/projects/scmrtos/)
   \end{itemize}
 \end{frame}
 
